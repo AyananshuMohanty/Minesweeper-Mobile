@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
-  const StartScreen({super.key});
+  const StartScreen(this.levelSelector, {super.key});
+
+  final void Function() levelSelector;
   @override
   Widget build(context) {
     return Center(
@@ -18,7 +20,7 @@ class StartScreen extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         OutlinedButton.icon(
-            onPressed: () {},
+            onPressed: levelSelector,
             style: OutlinedButton.styleFrom(
               foregroundColor: const Color.fromARGB(255, 34, 40, 49),
             ),
