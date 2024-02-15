@@ -31,7 +31,17 @@ class StartScreen extends StatelessWidget {
                 color: Color.fromARGB(255, 34, 40, 49),
                 fontSize: 24,
               ),
-            ))
+            )),
+        const Align(
+          alignment: Alignment.bottomCenter,
+          child: Text(
+            "Ayananshu Mohanty",
+            style: TextStyle(
+              color: Color.fromARGB(255, 251, 249, 241),
+              fontSize: 12,
+            ),
+          ),
+        ),
       ],
     ));
   }
